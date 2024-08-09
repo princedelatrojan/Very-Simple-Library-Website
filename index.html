@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Additional styles for slideshow */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Welcome to Our Library</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="collections.html">Collections</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="slideshow-container">
+    <img class="mySlides fade" src="library-slide1.jpg" style="display: block;">
+    <img class="mySlides fade" src="library-slide2.jpg" style="display: none;">
+    <img class="mySlides fade" src="library-slide3.jpg" style="display: none;">
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Explore a World of Knowledge</h2>
+        <p>Welcome to Our Library, where you can discover new books, attend events, and enrich your mind.</p>
+        <a href="collections.html" class="btn">Browse Collections</a>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Learn about our mission, vision, and commitment to education and literacy. We strive to provide a welcoming environment for everyone.</p>
+        <a href="about.html" class="btn">Learn More</a>
+    </div>
+</section>
+
+
+</body>
+</html>
